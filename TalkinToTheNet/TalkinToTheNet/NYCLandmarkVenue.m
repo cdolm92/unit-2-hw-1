@@ -16,7 +16,12 @@
         
         self.venueName = venue[@"name"];
                           
-        self.venueAddress = venue[@"location"][@"formattedAddress"];
+       
+        
+        
+        self.venueAddress = [venue[@"location"][@"formattedAddress"] componentsJoinedByString:@" "];
+        
+    //    self.categoryName = [venue[@"categories"];
         //        self.commentCount = [[[json objectForKey:@"comments"] objectForKey:@"count"] integerValue];
         
         //self.categoryName = [venue objectForKey:@"categories"];
