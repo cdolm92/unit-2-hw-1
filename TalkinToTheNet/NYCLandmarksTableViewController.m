@@ -9,6 +9,7 @@
 #import "NYCLandmarksTableViewController.h"
 #import "APIManager.h"
 #import "NYCLandmarkVenue.h"
+#import "NYCLandmarkVenueTableViewCell.h"
 
 @interface NYCLandmarksTableViewController ()
 
@@ -70,16 +71,18 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return [self.nycLandmarkResults count];
+    return self.nycLandmarkResults.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier" forIndexPath:indexPath];
     
+    NYCLandmarkVenueTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuseIdentifier" forIndexPath:indexPath];
     
+    NYCLandmarkVenue *post = self.nycLandmarkResults[indexPath.row];
     
-   
+    cell.landmarkName.text = [NSString stringWithFormat:@"@%@",post.venueName];
+    cell.landmarkAddress.text = [NSString stringWithFormat:@"@%@",post.venueAddress];
     
     return cell;
 }
