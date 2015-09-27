@@ -82,7 +82,14 @@
     NYCLandmarkVenue *post = self.nycLandmarkResults[indexPath.row];
     
     cell.landmarkName.text = [NSString stringWithFormat:@"%@",post.venueName];
-    cell.landmarkAddress.text = [NSString stringWithFormat:@"@%@",post.venueAddress];
+    
+    cell.checkinCount.text = [NSString stringWithFormat:@"Check-ins: %ld", post.checkinsCount];
+    
+    cell.tipCount.text = [NSString stringWithFormat:@"Tips: %ld", post.tipCount];
+    
+    cell.hereCount.text = [NSString stringWithFormat:@"Here Now: %ld", post.herenowCount];
+    
+    
     
     return cell;
 }
