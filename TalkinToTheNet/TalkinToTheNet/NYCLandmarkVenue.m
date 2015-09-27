@@ -20,11 +20,12 @@
         
         
         self.venueAddress = [venue[@"location"][@"formattedAddress"] componentsJoinedByString:@" "];
+        NSDictionary *venueType = [venue[@"categories"]objectAtIndex:0];
         
-    //    self.categoryName = [venue[@"categories"];
-        //        self.commentCount = [[[json objectForKey:@"comments"] objectForKey:@"count"] integerValue];
-        
-        //self.categoryName = [venue objectForKey:@"categories"];
+        self.categoryName = [venueType objectForKey:@"name"];
+       
+        // NSLog(@"%@", venueType);
+       
         self.checkinsCount = [venue[@"stats"][@"checkinsCount"]integerValue];
         self.tipCount = [venue[@"stats"][@"tipCount"]integerValue];
         self.herenowCount = [venue[@"hereNow"][@"count"]integerValue];

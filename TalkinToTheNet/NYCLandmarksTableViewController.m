@@ -85,6 +85,8 @@
     
     cell.landmarkAddress.text= [NSString stringWithFormat:@"%@", post.venueAddress];
     
+    cell.landmarkType.text = [NSString stringWithFormat:@"%@", post.categoryName];
+    
     cell.checkinCount.text = [NSString stringWithFormat:@"Check-ins: %ld", post.checkinsCount];
     
     cell.tipCount.text = [NSString stringWithFormat:@"Tips: %ld", post.tipCount];
