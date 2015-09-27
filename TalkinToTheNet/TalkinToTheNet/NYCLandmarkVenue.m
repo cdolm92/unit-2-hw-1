@@ -10,18 +10,19 @@
 
 @implementation NYCLandmarkVenue
 
-- (instancetype)initWithJSON:(NSDictionary *)json {
+- (instancetype)initWithJSON:(NSDictionary *)venue {
     
     if (self = [super init]) {
         
-        self.venueName = json[@"venues"][@"name"];
+        self.venueName = venue[@"name"];
                           
-        self.venueAddress = json[@"venues"][@"formattedAddress"];
+        self.venueAddress = venue[@"location"][@"formattedAddress"];
         //        self.commentCount = [[[json objectForKey:@"comments"] objectForKey:@"count"] integerValue];
-        self.categoryName = json[@"categories"][@"name"];
-        self.checkinsCount = [json[@"stats"][@"checkinsCount"]integerValue];
-        self.tipCount = [json[@"stats"][@"tipCount"]integerValue];
-        self.herenowCount = [json[@"hereNow"][@"count"]integerValue];
+        
+        //self.categoryName = [venue objectForKey:@"categories"];
+        self.checkinsCount = [venue[@"stats"][@"checkinsCount"]integerValue];
+        self.tipCount = [venue[@"stats"][@"tipCount"]integerValue];
+        self.herenowCount = [venue[@"hereNow"][@"count"]integerValue];
         
         return self;
     }

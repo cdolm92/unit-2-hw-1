@@ -29,16 +29,16 @@
         
         NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
         
-        NSArray *results = json[@"response"];
+        NSArray *venues = json[@"response"][@"venues"];
         
         // reset my array
         self.nycLandmarkResults = [[NSMutableArray alloc] init];
         
         // loop through all json posts
-        for (NSDictionary *result in results) {
+        for (NSDictionary *venue in venues) {
             
             // create new post from json
-            NYCLandmarkVenue *post = [[NYCLandmarkVenue alloc] initWithJSON:result];
+            NYCLandmarkVenue *post = [[NYCLandmarkVenue alloc] initWithJSON:venue];
             
             // add post to array
             [self.nycLandmarkResults addObject:post];
@@ -81,7 +81,7 @@
     
     NYCLandmarkVenue *post = self.nycLandmarkResults[indexPath.row];
     
-    cell.landmarkName.text = [NSString stringWithFormat:@"@%@",post.venueName];
+    cell.landmarkName.text = [NSString stringWithFormat:@"%@",post.venueName];
     cell.landmarkAddress.text = [NSString stringWithFormat:@"@%@",post.venueAddress];
     
     return cell;
