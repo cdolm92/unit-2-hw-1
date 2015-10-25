@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "458F79B2312A5EF0A7F09D9D46DE35A16D1CB335",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "458F79B2312A5EF0A7F09D9D46DE35A16D1CB335" : 0,
+    "DF9940A3EC27BE56DF13C9D1F3F55CBF56F90E10" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4FD88975-5D2E-4FE5-9151-99616FF5AF5F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "458F79B2312A5EF0A7F09D9D46DE35A16D1CB335" : "unit-2-hw-1\/",
+    "DF9940A3EC27BE56DF13C9D1F3F55CBF56F90E10" : "..\/..\/unit-2-final-project"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TalkinToTheNet",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TalkinToTheNet\/TalkinToTheNet.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:cdolm92\/unit-2-hw-1.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "458F79B2312A5EF0A7F09D9D46DE35A16D1CB335"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Zovfreullia\/unit-2-final-project.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DF9940A3EC27BE56DF13C9D1F3F55CBF56F90E10"
+    }
+  ]
+}

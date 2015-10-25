@@ -10,6 +10,7 @@
 #import "APIManager.h"
 #import "NYCLandmarkVenue.h"
 #import "NYCLandmarkVenueTableViewCell.h"
+#import "VenueMapViewController.h"
 
 @interface NYCLandmarksTableViewController ()
 
@@ -97,6 +98,37 @@
     
     return cell;
 }
+
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    //    NSLog(@"preparing...");
+    
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    
+    NYCLandmarkVenue *post = self.nycLandmarkResults[indexPath.row];
+    
+    float theLandmarkLat  = post.landmarkLat;
+    float theLandmarkLng= post.landmarkLng;
+    
+    
+    VenueMapViewController *venueMapViewController = segue.destinationViewController;
+    venueMapViewController.lmLat = theLandmarkLat;
+    venueMapViewController.lmLng = theLandmarkLng;
+   
+}
+
+
+- (NSString *)objectForIndexPath:(NSIndexPath *)indexPath {
+    
+    
+    return self.nycLandmarkResults[indexPath.row];
+    
+}
+ 
+
+
+
 
 
 

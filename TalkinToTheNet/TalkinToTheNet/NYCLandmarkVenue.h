@@ -16,6 +16,8 @@
 @property (nonatomic) NSInteger checkinsCount;
 @property (nonatomic) NSInteger tipCount;
 @property (nonatomic) NSInteger herenowCount;
+@property (nonatomic) float landmarkLat;
+@property (nonatomic) float landmarkLng;
 
 - (instancetype)initWithJSON:(NSDictionary *)json;
 

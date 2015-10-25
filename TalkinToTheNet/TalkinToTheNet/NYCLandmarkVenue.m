@@ -20,6 +20,7 @@
         
         
         self.venueAddress = [venue[@"location"][@"formattedAddress"] componentsJoinedByString:@" "];
+        
         NSDictionary *venueType = [venue[@"categories"]objectAtIndex:0];
         
         self.categoryName = [venueType objectForKey:@"name"];
@@ -29,6 +30,10 @@
         self.checkinsCount = [venue[@"stats"][@"checkinsCount"]integerValue];
         self.tipCount = [venue[@"stats"][@"tipCount"]integerValue];
         self.herenowCount = [venue[@"hereNow"][@"count"]integerValue];
+        
+        self.landmarkLat = [venue[@"location"][@"lat"]floatValue];
+        self.landmarkLng = [venue[@"location"][@"lng"]floatValue];
+        
         
         return self;
     }

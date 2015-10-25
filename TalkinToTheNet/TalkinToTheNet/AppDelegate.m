@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+@import GoogleMaps;
+
+
 
 @interface AppDelegate ()
 
@@ -16,8 +19,22 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [GMSServices provideAPIKey:@"AIzaSyBvSNESL2P_TFe5XmNqBfmqJcMwV2jInGA"];
+  /*
+    NSString  *music = [[NSBundle mainBundle]pathForResource:@"Frank Sinatra - New York, New York." ofType:@"mp3"];
+   
+    nycMusic = [[AVAudioPlayer alloc] initWithContentsOfURL: [NSURL fileURLWithPath:music] error:NULL];
+    nycMusic.delegate = self;
+    nycMusic.numberOfLoops = -1;
+    [nycMusic play];
+   */
+   
+    
     return YES;
+
+    
+ 
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
