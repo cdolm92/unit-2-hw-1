@@ -85,7 +85,6 @@
 		56560FBABA31EA9E7058E188 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F72092491BDC5E1000D7DCD4 /* AVFoundation.framework */,
 				473AF770B733629D87BD9E50 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -94,6 +93,7 @@
 		8D7DCD3D1BAF859400A92AD2 = {
 			isa = PBXGroup;
 			children = (
+				F72092491BDC5E1000D7DCD4 /* AVFoundation.framework */,
 				F71C8A901BCD96E800DAEE5D /* CoreLocation.framework */,
 				F71C8A8E1BCD913900DAEE5D /* MapKit.framework */,
 				8D7DCD481BAF859400A92AD2 /* TalkinToTheNet */,

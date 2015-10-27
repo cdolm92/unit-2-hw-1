@@ -21,15 +21,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [GMSServices provideAPIKey:@"AIzaSyBvSNESL2P_TFe5XmNqBfmqJcMwV2jInGA"];
-  /*
-    NSString  *music = [[NSBundle mainBundle]pathForResource:@"Frank Sinatra - New York, New York." ofType:@"mp3"];
-   
-    nycMusic = [[AVAudioPlayer alloc] initWithContentsOfURL: [NSURL fileURLWithPath:music] error:NULL];
-    nycMusic.delegate = self;
-    nycMusic.numberOfLoops = -1;
-    [nycMusic play];
-   */
-   
+    
+    
+     NSString  *music = [[NSBundle mainBundle]pathForResource:@"Frank Sinatra - New York, New York." ofType:@"mp3"];
+     
+     nycMusic = [[AVAudioPlayer alloc] initWithContentsOfURL: [NSURL fileURLWithPath:music] error:NULL];
+     nycMusic.delegate = self;
+     nycMusic.numberOfLoops = -1;
+     [nycMusic play];
+    
+    
+
     
     return YES;
 
