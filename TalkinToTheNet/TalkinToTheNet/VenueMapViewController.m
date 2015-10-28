@@ -30,6 +30,8 @@
  //  float lat = self.lmLat;
  //  float lon = self.lmLng;
     
+
+    
     
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude: self.lmLat
                                                             longitude: self.lmLng
@@ -41,8 +43,8 @@
     // Creates a marker in the center of the map.
     GMSMarker *marker = [[GMSMarker alloc] init];
     marker.position = CLLocationCoordinate2DMake(  self.lmLat,self.lmLng);
-    marker.title = @"Sydney";
-    marker.snippet = @"Australa";
+    marker.title = self.venueTitle;
+    marker.snippet = self.venuePlace;
     marker.map = mapView_;
 }
 

@@ -115,6 +115,8 @@
     VenueMapViewController *venueMapViewController = segue.destinationViewController;
     venueMapViewController.lmLat = theLandmarkLat;
     venueMapViewController.lmLng = theLandmarkLng;
+    venueMapViewController.venueTitle = [NSString stringWithFormat:@"%@", post.venueName];
+    venueMapViewController.venuePlace = [NSString stringWithFormat:@"%@", post.venueAddress];
    
 }
 

@@ -14,5 +14,9 @@
 
 @property (nonatomic) float lmLng;
 
+@property (nonatomic) NSString *venueTitle;
+
+@property (nonatomic) NSString *venuePlace;
+
 
 @end
