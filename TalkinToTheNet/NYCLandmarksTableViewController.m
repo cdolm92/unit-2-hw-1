@@ -55,6 +55,23 @@
     [super viewDidLoad];
     [self fetchFourSquareData];
     
+    
+   
+    self.navigationItem.title = @"🗽   New York City Landmarks   🗽";
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    [self.navigationController.navigationBar
+     setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    
+
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.16 green:0.20 blue:0.50 alpha:1.0];
+    
+    
+    self.tabBarController.tabBar.tintColor = [UIColor colorWithRed:1.0 green:.11 blue:.52 alpha:1.0];
+ 
+   
+    
+
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -83,10 +100,15 @@
     NYCLandmarkVenue *post = self.nycLandmarkResults[indexPath.row];
     
     cell.landmarkName.text = [NSString stringWithFormat:@"%@",post.venueName];
+    cell.landmarkName.lineBreakMode = NSLineBreakByWordWrapping;
+    cell.landmarkAddress.numberOfLines = 0;
     
     cell.landmarkAddress.text= [NSString stringWithFormat:@"%@", post.venueAddress];
+    cell.landmarkAddress.lineBreakMode = NSLineBreakByWordWrapping;
+    cell.landmarkAddress.numberOfLines = 0;
     
     cell.landmarkType.text = [NSString stringWithFormat:@"%@", post.categoryName];
+   
     
     cell.checkinCount.text = [NSString stringWithFormat:@"Check-ins: %ld", post.checkinsCount];
     
