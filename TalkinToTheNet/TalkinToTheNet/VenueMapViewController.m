@@ -34,7 +34,8 @@
     
     self.tabBarController.tabBar.tintColor = [UIColor colorWithRed:1.0 green:.11 blue:.52 alpha:1.0];
 
-    
+    self.navigationItem.title = self.venueTitle;
+
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     [button setTitle:@"Press Me" forState:UIControlStateNormal];
