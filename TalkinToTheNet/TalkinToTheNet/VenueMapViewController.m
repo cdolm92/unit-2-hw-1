@@ -65,7 +65,7 @@
     marker.title = self.venueTitle;
     marker.snippet = self.venuePlace;
     marker.appearAnimation = kGMSMarkerAnimationPop;
-    marker.icon = [GMSMarker markerImageWithColor: [UIColor blueColor]];
+    marker.icon = [GMSMarker markerImageWithColor: [UIColor colorWithRed:1.0 green:.11 blue:.52 alpha:1.0]];
     marker.map = mapView_;
 }
 
