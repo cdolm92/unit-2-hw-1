@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hJW-h8-thE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hJW-h8-thE">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
         <scene sceneID="NBd-fy-W5n">
             <objects>
                 <tabBarController id="hJW-h8-thE" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="cgl-PK-Exe">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="cgl-PK-Exe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" red="0.15853282020000001" green="0.1980249785" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
@@ -32,10 +31,13 @@
             <objects>
                 <navigationController id="m7o-Ir-fFv" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Landmarks" image="building_F" selectedImage="building_F" id="wxN-7h-BB3"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YFk-3S-NLt">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="YFk-3S-NLt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
+                        <color key="barTintColor" red="0.15853282020000001" green="0.1980249785" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="9By-ho-tVn" kind="relationship" relationship="rootViewController" id="hSC-Vd-F4L"/>
@@ -50,64 +52,55 @@
             <objects>
                 <tableViewController id="9By-ho-tVn" customClass="NYCLandmarksTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" id="V8w-jV-8wP">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" rowHeight="200" id="TjE-v8-1Ld" customClass="NYCLandmarkVenueTableViewCell">
-                                <rect key="frame" x="0.0" y="92" width="600" height="200"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TjE-v8-1Ld" id="o6N-VM-ZzS">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="199.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Check-ins:  0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x94-i7-dEB">
-                                            <rect key="frame" x="33" y="147" width="131" height="18"/>
-                                            <animations/>
+                                            <rect key="frame" x="33" y="147" width="139" height="18"/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                             <color key="textColor" red="0.15853282020000001" green="0.1980249785" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" fixedFrame="YES" text="Tips: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJZ-wa-32P">
-                                            <rect key="frame" x="172" y="147" width="93" height="18"/>
-                                            <animations/>
+                                            <rect key="frame" x="175" y="147" width="93" height="18"/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                             <color key="textColor" red="0.15853282020000001" green="0.1980249785" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="751" fixedFrame="YES" text="Address" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nb6-Sp-4AF">
                                             <rect key="frame" x="33" y="57" width="300" height="44"/>
-                                            <animations/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                             <color key="textColor" red="0.15853282020000001" green="0.1980249785" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Here Now: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVy-8o-ceK">
-                                            <rect key="frame" x="266" y="147" width="138" height="18"/>
-                                            <animations/>
+                                            <rect key="frame" x="277" y="147" width="138" height="18"/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                             <color key="textColor" red="0.15853282020000001" green="0.1980249785" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Landmark Name" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQx-mE-AJu">
                                             <rect key="frame" x="33" y="-4" width="371" height="69"/>
-                                            <animations/>
                                             <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="19"/>
                                             <color key="textColor" red="1" green="0.11372549019607843" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" fixedFrame="YES" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jri-ih-R30">
-                                            <rect key="frame" x="33" y="114" width="360.5" height="18"/>
-                                            <animations/>
+                                            <rect key="frame" x="33" y="114" width="361" height="18"/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                             <color key="textColor" red="0.15853282020000001" green="0.1980249785" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <animations/>
                                 </tableViewCellContentView>
-                                <animations/>
                                 <color key="tintColor" red="0.69019607843137254" green="0.96470588235294119" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="checkinCount" destination="x94-i7-dEB" id="GKt-Xq-ro0"/>
@@ -116,7 +109,7 @@
                                     <outlet property="landmarkName" destination="qQx-mE-AJu" id="qBy-yY-Eu1"/>
                                     <outlet property="landmarkType" destination="Jri-ih-R30" id="8vP-ha-CbD"/>
                                     <outlet property="tipCount" destination="SJZ-wa-32P" id="dQF-xO-bDP"/>
-                                    <segue destination="T8x-yX-TXx" kind="show" id="14g-Lq-Ohj"/>
+                                    <segue destination="T8x-yX-TXx" kind="show" id="EhQ-le-jMG"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -141,9 +134,8 @@
                         <viewControllerLayoutGuide type="bottom" id="mHX-S2-0fK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HfE-84-pXf">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="P4I-2W-cXE"/>
@@ -157,10 +149,13 @@
             <objects>
                 <navigationController id="Kkk-Kv-0Io" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="About" image="notepad_F" id="2rg-LQ-K2z"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="T1w-y1-O6b">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="T1w-y1-O6b">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
+                        <color key="barTintColor" red="0.15853282020000001" green="0.1980249785" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="BKH-2e-cfm" kind="relationship" relationship="rootViewController" id="kTd-eU-Oy4"/>
@@ -179,12 +174,11 @@
                         <viewControllerLayoutGuide type="bottom" id="hFk-Kl-0g2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7EN-ta-RrI">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RAj-bd-RcX">
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RAj-bd-RcX">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
-                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="MXM-tO-ed1"/>
@@ -196,7 +190,6 @@
                                 </variation>
                             </webView>
                         </subviews>
-                        <animations/>
                         <constraints>
                             <constraint firstItem="hFk-Kl-0g2" firstAttribute="top" secondItem="RAj-bd-RcX" secondAttribute="bottom" id="2VL-tx-a2O"/>
                             <constraint firstItem="RAj-bd-RcX" firstAttribute="centerY" secondItem="7EN-ta-RrI" secondAttribute="centerY" id="Bb9-aS-GRM"/>

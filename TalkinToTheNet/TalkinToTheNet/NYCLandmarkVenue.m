@@ -16,10 +16,7 @@
         
         self.venueName = venue[@"name"];
                           
-       
-        
-        
-        self.venueAddress = [venue[@"location"][@"formattedAddress"] componentsJoinedByString:@" "];
+       self.venueAddress = [venue[@"location"][@"formattedAddress"] componentsJoinedByString:@" "];
         
         NSDictionary *venueType = [venue[@"categories"]objectAtIndex:0];
         

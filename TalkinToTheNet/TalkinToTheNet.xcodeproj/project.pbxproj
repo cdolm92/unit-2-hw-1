@@ -13,17 +13,16 @@
 		8D7DCD541BAF859400A92AD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7DCD521BAF859400A92AD2 /* Main.storyboard */; };
 		8D7DCD561BAF859400A92AD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D7DCD551BAF859400A92AD2 /* Assets.xcassets */; };
 		8D7DCD591BAF859400A92AD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7DCD571BAF859400A92AD2 /* LaunchScreen.storyboard */; };
-		F71C8A8D1BCD900500DAEE5D /* VenueMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71C8A8C1BCD900500DAEE5D /* VenueMapViewController.m */; settings = {ASSET_TAGS = (); }; };
+		F71C8A8D1BCD900500DAEE5D /* VenueMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F71C8A8C1BCD900500DAEE5D /* VenueMapViewController.m */; };
 		F71C8A8F1BCD913900DAEE5D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71C8A8E1BCD913900DAEE5D /* MapKit.framework */; };
 		F71C8A911BCD96E800DAEE5D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71C8A901BCD96E800DAEE5D /* CoreLocation.framework */; };
-		F72092451BDC1F0E00D7DCD4 /* WikipediaHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F72092441BDC1F0E00D7DCD4 /* WikipediaHelper.m */; settings = {ASSET_TAGS = (); }; };
-		F72092481BDC22D400D7DCD4 /* NYWikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72092471BDC22D400D7DCD4 /* NYWikiViewController.m */; settings = {ASSET_TAGS = (); }; };
+		F72092481BDC22D400D7DCD4 /* NYWikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F72092471BDC22D400D7DCD4 /* NYWikiViewController.m */; };
 		F720924A1BDC5E1000D7DCD4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72092491BDC5E1000D7DCD4 /* AVFoundation.framework */; };
-		F720924C1BDC624000D7DCD4 /* Frank Sinatra - New York, New York..mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F720924B1BDC624000D7DCD4 /* Frank Sinatra - New York, New York..mp3 */; settings = {ASSET_TAGS = (); }; };
-		F73438EA1BB6EFEC00E3C44C /* NYCLandmarksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F73438E91BB6EFEC00E3C44C /* NYCLandmarksTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		F74A4D7E1BB72B480025E828 /* NYCLandmarkVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A4D7D1BB72B480025E828 /* NYCLandmarkVenue.m */; settings = {ASSET_TAGS = (); }; };
-		F74A4D811BB72FB60025E828 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A4D801BB72FB60025E828 /* APIManager.m */; settings = {ASSET_TAGS = (); }; };
-		F74A4D841BB736A60025E828 /* NYCLandmarkVenueTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A4D831BB736A60025E828 /* NYCLandmarkVenueTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		F720924C1BDC624000D7DCD4 /* Frank Sinatra - New York, New York..mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F720924B1BDC624000D7DCD4 /* Frank Sinatra - New York, New York..mp3 */; };
+		F73438EA1BB6EFEC00E3C44C /* NYCLandmarksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F73438E91BB6EFEC00E3C44C /* NYCLandmarksTableViewController.m */; };
+		F74A4D7E1BB72B480025E828 /* NYCLandmarkVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A4D7D1BB72B480025E828 /* NYCLandmarkVenue.m */; };
+		F74A4D811BB72FB60025E828 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A4D801BB72FB60025E828 /* APIManager.m */; };
+		F74A4D841BB736A60025E828 /* NYCLandmarkVenueTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F74A4D831BB736A60025E828 /* NYCLandmarkVenueTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,8 +41,6 @@
 		F71C8A8C1BCD900500DAEE5D /* VenueMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueMapViewController.m; sourceTree = "<group>"; };
 		F71C8A8E1BCD913900DAEE5D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F71C8A901BCD96E800DAEE5D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		F72092431BDC1F0E00D7DCD4 /* WikipediaHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WikipediaHelper.h; path = "../../../../../unit-2-final-project/LewisAndClark/googleApp/WikipediaHelper.h"; sourceTree = "<group>"; };
-		F72092441BDC1F0E00D7DCD4 /* WikipediaHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WikipediaHelper.m; path = "../../../../../unit-2-final-project/LewisAndClark/googleApp/WikipediaHelper.m"; sourceTree = "<group>"; };
 		F72092461BDC22D400D7DCD4 /* NYWikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYWikiViewController.h; sourceTree = "<group>"; };
 		F72092471BDC22D400D7DCD4 /* NYWikiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYWikiViewController.m; sourceTree = "<group>"; };
 		F72092491BDC5E1000D7DCD4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -114,8 +111,6 @@
 		8D7DCD481BAF859400A92AD2 /* TalkinToTheNet */ = {
 			isa = PBXGroup;
 			children = (
-				F72092431BDC1F0E00D7DCD4 /* WikipediaHelper.h */,
-				F72092441BDC1F0E00D7DCD4 /* WikipediaHelper.m */,
 				8D7DCD4C1BAF859400A92AD2 /* AppDelegate.h */,
 				8D7DCD4D1BAF859400A92AD2 /* AppDelegate.m */,
 				F74A4D7F1BB72FB60025E828 /* APIManager.h */,
@@ -257,7 +252,6 @@
 				F74A4D7E1BB72B480025E828 /* NYCLandmarkVenue.m in Sources */,
 				8D7DCD4E1BAF859400A92AD2 /* AppDelegate.m in Sources */,
 				F73438EA1BB6EFEC00E3C44C /* NYCLandmarksTableViewController.m in Sources */,
-				F72092451BDC1F0E00D7DCD4 /* WikipediaHelper.m in Sources */,
 				8D7DCD4B1BAF859400A92AD2 /* main.m in Sources */,
 				F72092481BDC22D400D7DCD4 /* NYWikiViewController.m in Sources */,
 				F71C8A8D1BCD900500DAEE5D /* VenueMapViewController.m in Sources */,

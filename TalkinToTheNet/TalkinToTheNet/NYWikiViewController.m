@@ -21,12 +21,12 @@
 
     
     self.navigationItem.title = @"🗽 About NYC 🗽";
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-    [self.navigationController.navigationBar
-     setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
-    
-    
-    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.16 green:0.20 blue:0.50 alpha:1.0];
+//    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+//    [self.navigationController.navigationBar
+//     setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+//    
+//    
+//    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.16 green:0.20 blue:0.50 alpha:1.0];
     
     NSURL *url = [NSURL URLWithString:@"https://en.wikipedia.org/wiki/New_York_City"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];

@@ -22,6 +22,8 @@
 
 - (void)fetchFourSquareData {
     
+  
+    
     // create an instagram url
     NSURL *foursquaredURL = [NSURL URLWithString:@"https://api.foursquare.com/v2/venues/search?near=nyc&categoryId=4bf58dd8d48988d12d941735&v=20150214&m=foursquare&client_secret=NGQC00NCHF3FC5J3R3JSBRF3RAWZUAAMFVY25AR5WRLBGM0X&client_id=IQI1WCI0PYHPRKUWXVII2IGMIPXOIPI4A54ZDBOIHUZFDKDO"];
     
@@ -58,14 +60,14 @@
     
    
     self.navigationItem.title = @"🗽   New York City Landmarks   🗽";
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-    [self.navigationController.navigationBar
-     setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
-    
-
-    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.16 green:0.20 blue:0.50 alpha:1.0];
-    
-    
+//    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+//    [self.navigationController.navigationBar
+//     setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+//    
+//
+//    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.16 green:0.20 blue:0.50 alpha:1.0];
+//    
+//    
     self.tabBarController.tabBar.tintColor = [UIColor colorWithRed:1.0 green:.11 blue:.52 alpha:1.0];
  
    
